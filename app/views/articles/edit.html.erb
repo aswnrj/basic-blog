@@ -1,0 +1,6 @@
+<h1>Edit article</h1>
+
+<% @action = "Update Article" %>
+<% @post_path = "/articles/"+@article.id.to_s %>
+<% @post_method = :patch %>
+<%= render 'form' %>
